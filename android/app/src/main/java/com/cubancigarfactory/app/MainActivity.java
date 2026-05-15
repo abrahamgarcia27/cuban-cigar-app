@@ -1,4 +1,4 @@
-package com.cubancigarfactory.leads;
+package com.cubancigarfactory.app;
 
 import com.getcapacitor.BridgeActivity;
 

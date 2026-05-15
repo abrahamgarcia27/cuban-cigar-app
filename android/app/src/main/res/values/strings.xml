@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Cuban Cigar App</string>
     <string name="title_activity_main">Cuban Cigar App</string>
-    <string name="package_name">com.cubancigarfactory.leads</string>
-    <string name="custom_url_scheme">com.cubancigarfactory.leads</string>
+    <string name="package_name">com.cubancigarfactory.app</string>
+    <string name="custom_url_scheme">com.cubancigarfactory.app</string>
 </resources>
