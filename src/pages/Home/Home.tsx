@@ -13,7 +13,7 @@ export default function Home() {
         <div className={styles.background} />
 
         <main className={styles.main}>
-          <img className={styles.logo} src="/assets/ccf-logo.svg" alt="Cuban Cigar Factory" />
+          <img className={styles.logo} src="/logo.png" alt="Cuban Cigar Factory" />
 
           <section className={styles.card}>
             <h1 className={styles.title}>

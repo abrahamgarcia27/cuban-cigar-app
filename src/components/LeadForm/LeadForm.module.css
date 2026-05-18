@@ -32,15 +32,10 @@
 }
 
 .segment :global(ion-segment-button) {
-  --indicator-color: rgba(208, 161, 91, 0.85);
+  --indicator-color: rgba(208, 161, 91, 0.95);
   --color: rgba(255, 255, 255, 0.85);
-  --color-checked: rgba(12, 10, 8, 0.92);
+  --color-checked: #ffffff;
   --background-hover: rgba(255, 255, 255, 0.03);
-}
-
-.segment :global(ion-segment-button.segment-button-checked) {
-  --indicator-color: transparent;
-  --background: linear-gradient(135deg, rgba(208, 161, 91, 0.95), rgba(243, 210, 154, 0.82));
 }
 
 .radioError {

@@ -94,7 +94,12 @@ export function LeadForm({ onSuccess, onError }: Props) {
       <FormInput
         label="Phone"
         value={lead.phone}
-        onChange={(value) => setLead((prev) => ({ ...prev, phone: value }))}
+        onChange={(value) => {
+          let x = value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+          if (!x) return setLead((prev) => ({ ...prev, phone: '' }));
+          let formatted = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
+          setLead((prev) => ({ ...prev, phone: formatted }));
+        }}
         placeholder="(619) 555-0123"
         type="tel"
         autocomplete="tel"
