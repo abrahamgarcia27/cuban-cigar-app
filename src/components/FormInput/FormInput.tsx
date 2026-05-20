@@ -23,7 +23,7 @@ export function FormInput({
   placeholder,
   type = 'text',
   inputMode,
-  autocomplete,
+  autocomplete = 'off',
   required = false,
   disabled = false,
   error,

@@ -49,6 +49,7 @@ export function LeadForm({ onSuccess, onError }: Props) {
   return (
     <form
       className={styles.form}
+      autoComplete="off"
       onSubmit={(e) => {
         e.preventDefault();
         void handleSubmit();
@@ -60,7 +61,6 @@ export function LeadForm({ onSuccess, onError }: Props) {
           value={lead.firstName}
           onChange={(value) => setLead((prev) => ({ ...prev, firstName: value }))}
           placeholder="John"
-          autocomplete="given-name"
           required
           disabled={isSubmitting}
           error={errors.firstName}
@@ -71,7 +71,6 @@ export function LeadForm({ onSuccess, onError }: Props) {
           value={lead.lastName}
           onChange={(value) => setLead((prev) => ({ ...prev, lastName: value }))}
           placeholder="Doe"
-          autocomplete="family-name"
           required
           disabled={isSubmitting}
           error={errors.lastName}
@@ -84,7 +83,6 @@ export function LeadForm({ onSuccess, onError }: Props) {
         onChange={(value) => setLead((prev) => ({ ...prev, email: value }))}
         placeholder="john.doe@email.com"
         type="email"
-        autocomplete="email"
         inputMode="email"
         required
         disabled={isSubmitting}
@@ -102,7 +100,6 @@ export function LeadForm({ onSuccess, onError }: Props) {
         }}
         placeholder="(619) 555-0123"
         type="tel"
-        autocomplete="tel"
         inputMode="tel"
         required
         disabled={isSubmitting}
